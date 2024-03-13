@@ -12,7 +12,10 @@ const App = () => {
           path="/"
           element={<Main darkMode={darkMode} onDarkMode={setDarkMode} />}
         />
-        <Route path="product/:id" element={<Product darkMode={darkMode} />} />
+        <Route
+          path="product/:id"
+          element={<Product darkMode={darkMode} onDarkMode={setDarkMode} />}
+        />
       </Routes>
     </BrowserRouter>
   );

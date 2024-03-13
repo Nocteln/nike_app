@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Button({
   label,
   iconUrl,
@@ -5,22 +7,29 @@ function Button({
   borderColor,
   textColor,
   fullWidth,
+  to,
 }) {
   return (
-    <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${
-        fullWidth && "w-full"
-      } ${
-        backgroundColor
-          ? `${backgroundColor} ${textColor} ${borderColor}`
-          : "bg-coral-red text-white border-coral-red "
-      }`}
-    >
-      {label}
-      {iconUrl && (
-        <img src={iconUrl} alt="icon" className="ml-2 rounded-fulld w-5 h-5" />
-      )}
-    </button>
+    <NavLink to={to}>
+      <button
+        className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${
+          fullWidth && "w-full"
+        } ${
+          backgroundColor
+            ? `${backgroundColor} ${textColor} ${borderColor}`
+            : "bg-coral-red text-white border-coral-red "
+        }`}
+      >
+        {label}
+        {iconUrl && (
+          <img
+            src={iconUrl}
+            alt="icon"
+            className="ml-2 rounded-fulld w-5 h-5"
+          />
+        )}
+      </button>
+    </NavLink>
   );
 }
 
