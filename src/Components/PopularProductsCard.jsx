@@ -32,11 +32,11 @@ const PopularProductCard = ({
           {rating}
         </p>
       </div>
-      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin dark:text-slate-50">
+      <h3 className="mt-1 text-2xl leading-normal font-semibold font-palanquin dark:text-slate-50">
         {name}
       </h3>
-      <p className="mt-2 font-semibold font-montserrat text-coral-red text-2xl leading-normal">
-        {price}
+      <p className="mt-0.5 font-semibold font-montserrat text-coral-red text-2xl leading-normal">
+        ${price}
       </p>
     </div>
   );

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Nav from "../Components/Nav";
 import {
   PopularProducts,
@@ -11,11 +10,10 @@ import {
   Hero,
 } from "../sections";
 
-function Main() {
-  const [darkMode, setDarkMode] = useState(false);
+function Main({ darkMode, onDarkMode }) {
   return (
     <main className="relative dark:bg-slate-900">
-      <Nav darkMode={darkMode} onDarkMode={setDarkMode} />
+      <Nav darkMode={darkMode} onDarkMode={onDarkMode} />
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
