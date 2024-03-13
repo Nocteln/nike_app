@@ -25,8 +25,9 @@ function Nav() {
               onClick={() => {
                 document.body.classList.toggle("dark");
               }}
+              className="text-slate-gray dark:text-slate-50 border-slate-gray border-2 p-1.5 bark:bg-slate-gray rounded-full"
             >
-              activate Dark Mode
+              toggle Dark Mode
             </button>
           </li>
         </ul>
