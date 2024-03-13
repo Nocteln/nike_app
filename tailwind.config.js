@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "media",
   theme: {
     fontSize: {
       xs: ["12px", "16px"],
@@ -31,6 +32,8 @@ export default {
       backgroundImage: {
         hero: "url('assets/images/collection-background.svg')",
         card: "url('assets/images/thumbnail-background.svg')",
+        darkHero: "url('assets/images/collection-background-dark.svg')",
+        darkCard: "url('assets/images/thumbnail-background-dark.svg')",
       },
       screens: {
         wide: "1440px",
