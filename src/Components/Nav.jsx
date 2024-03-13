@@ -2,9 +2,9 @@ import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 
-function Nav() {
+function Nav({ darkMode, onDarkMode }) {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-2 absolute w-full sticky top-0 z-20 bg-white dark:bg-slate-900">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
@@ -24,6 +24,7 @@ function Nav() {
             <button
               onClick={() => {
                 document.body.classList.toggle("dark");
+                onDarkMode(!darkMode);
               }}
               className="text-slate-gray dark:text-slate-50 border-slate-gray border-2 p-1.5 bark:bg-slate-gray rounded-full"
             >

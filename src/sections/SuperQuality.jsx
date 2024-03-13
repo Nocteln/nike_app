@@ -1,8 +1,8 @@
 import Button from "../Components/Button";
 import { arrowRight } from "../assets/icons";
-import { shoe8 } from "../assets/images";
+import { shoe8, shoe8Dark } from "../assets/images";
 
-const SuperQuality = () => {
+const SuperQuality = ({ darkMode }) => {
   return (
     <section
       id="about-us"
@@ -29,7 +29,7 @@ const SuperQuality = () => {
 
       <div className="flex-1 flex justify-center items-center">
         <img
-          src={shoe8}
+          src={!darkMode ? shoe8 : shoe8Dark}
           alt="shoe8"
           width={570}
           height={522}
