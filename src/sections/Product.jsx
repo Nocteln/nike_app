@@ -11,7 +11,7 @@ function Product({ darkMode }) {
     (x) => x.id == parseInt(id)
   );
   return (
-    <div>
+    <section>
       <Nav />
       <div className="flex flex-1 justify-evenly items-center mt-10">
         <img src={imgURL} alt={name} width={350} />
@@ -47,9 +47,9 @@ function Product({ darkMode }) {
 
       <div className="flex flex-col justify-evenly items-center">
         <h2 className="text-2xl font-palanquin font-bold dark:text-slate-50 mt-20 text-center mb-10">
-          <span className="text-coral-red">Discover</span> other shoes!
+          <span className="text-coral-red">Discover</span> Other Shoes!
         </h2>
-        <div className="flex flex-1 max-h-2">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grids-cols-1 sm:gap-4">
           {products
             .filter((x) => x.id != id)
             .map((item) => (
@@ -61,7 +61,7 @@ function Product({ darkMode }) {
             ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

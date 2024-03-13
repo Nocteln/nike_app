@@ -13,7 +13,7 @@ const PopularProductCard = ({
 }) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <NavLink to={`product/${id}`}>
+      <NavLink to={`/product/${id}`}>
         <div className="relative group">
           <button className="  px-7 py-4 font-montserrat text-lg rounded-full transition-opacity duration-1000 absolute top-[45%] left-16 bg-coral-red z-20 hidden group-hover:block">
             Buy now!
