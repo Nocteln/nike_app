@@ -20,6 +20,15 @@ function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <button
+              onClick={() => {
+                document.body.classList.toggle("dark");
+              }}
+            >
+              activate Dark Mode
+            </button>
+          </li>
         </ul>
         <div className="hidden max-lg:block">
           <img src={hamburger} alt="hamburger" width={25} height={25} />
